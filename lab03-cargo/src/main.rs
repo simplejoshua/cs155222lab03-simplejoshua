@@ -276,8 +276,8 @@ mod tests {
     #[test]
     fn test_binbool_or() {
         let expr = BoolExpr(BinBoolExpr {
-            left: Box::new(BoolLit(true)),
-            right: Box::new(BoolLit(false)),
+            left: Box::new(BoolLit(false)),
+            right: Box::new(BoolLit(true)),
             op: OrOp,
         });
 
